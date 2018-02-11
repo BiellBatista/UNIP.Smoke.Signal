@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="397.0" prefWidth="605.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.unip.cc.control.ChatController">
+   <children>
+      <JFXTextField id="textEnvia" fx:id="textEnvia" focusColor="#00af5a" layoutX="14.0" layoutY="291.0" prefHeight="30.0" prefWidth="364.0" promptText="Digite uma mensagem aqui" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="233.0">
+         <font>
+            <Font name="Open Sans" size="14.0" />
+         </font>
+      </JFXTextField>
+      <TextArea id="txtrRecebe" fx:id="txtrRecebe" editable="false" layoutX="11.0" layoutY="46.0" prefHeight="286.0" prefWidth="557.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="40.0" />
+      <MenuBar layoutX="6.0" layoutY="14.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu id="itemSmoke" fx:id="itemSmoke" mnemonicParsing="false" text="SmokeSignal">
+               <items>
+                  <MenuItem id="itemDesconectar" fx:id="itemDesconectar" mnemonicParsing="false" text="Desconectar">
+                     <graphic>
+                        <ImageView fitHeight="10.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../res/car-seat-belt.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem id="itemSair" fx:id="itemSair" mnemonicParsing="false" text="Sair">
+                     <graphic>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../res/forbidden-mark.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Chamar">
+            <items>
+              <MenuItem id="itemLigar" fx:id="itemLigar" mnemonicParsing="false" text="Ligar">
+                     <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../res/Telephone-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Sobre">
+            <items>
+              <MenuItem id="itemAutores" fx:id="itemAutores" mnemonicParsing="false" text="Autores">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../res/book-and-pen.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <JFXButton id="btnEnviar" fx:id="btnEnviar" buttonType="RAISED" layoutX="379.0" layoutY="360.0" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #00af5a;" text="Enviar" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="135.0">
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="14.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../res/send-button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton id="btnChamar" fx:id="btnChamar" buttonType="RAISED" layoutX="455.0" layoutY="336.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #00af5a;" text="Chamar" textFill="WHITE" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="14.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../res/Telephone-icon-bra.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Open Sans Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

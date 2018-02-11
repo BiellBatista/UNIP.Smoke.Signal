@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="372.0" prefWidth="505.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.unip.cc.control.LoginController">
+   <children>
+      <JFXButton id="btnEntrar" fx:id="btnEntrar" buttonType="RAISED" layoutX="88.0" layoutY="300.0" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #00af5a;" text="Entrar" textFill="WHITE">
+         <font>
+            <Font name="Open Sans Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="btnCadastre" fx:id="btnCadastre" buttonType="RAISED" layoutX="180.0" layoutY="300.0" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #00af5a;" text="Cadastrar" textFill="WHITE">
+         <font>
+            <Font name="Open Sans Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField id="txtEmail" fx:id="txtEmail" focusColor="#00af5a" layoutX="88.0" layoutY="186.0" prefHeight="28.0" prefWidth="321.0" promptText="E-mail">
+         <font>
+            <Font name="Open Sans" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Text fill="#00af5a" layoutX="174.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SmokeSignal" wrappingWidth="156.38671875">
+         <font>
+            <Font name="Open Sans" size="24.0" />
+         </font>
+      </Text>
+      <JFXPasswordField id="pwdSenha" fx:id="pwdSenha" focusColor="#00af5a" layoutX="88.0" layoutY="235.0" prefHeight="28.0" prefWidth="321.0" promptText="Senha">
+         <font>
+            <Font name="Open Sans" size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView id="microfone" fx:id="microfone" fitHeight="65.0" fitWidth="101.0" layoutX="215.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../res/microphone.png" />
+         </image></ImageView>
+      <ImageView fitHeight="33.0" fitWidth="65.0" layoutX="194.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../res/nuvem-escura-Nova.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="424.0" layoutY="433.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="8.0">
+         <image>
+            <Image url="@../../../../../../res/conama.PNG" />
+         </image>
+      </ImageView>
+      <JFXButton id="btnInfo" fx:id="btnInfo" buttonType="RAISED" layoutX="292.0" layoutY="299.0" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #00af5a;" text="Autores" textFill="WHITE">
+         <font>
+            <Font name="Open Sans Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

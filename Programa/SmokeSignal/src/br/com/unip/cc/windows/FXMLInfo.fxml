@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="305.0" prefWidth="401.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#00af5a" layoutX="144.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autores">
+         <font>
+            <Font name="Lucida Sans Regular" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gabriel de Almeida Batista">
+         <font>
+            <Font name="Lucida Sans Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felipe da Silva Borges Neves">
+         <font>
+            <Font name="Lucida Sans Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Igor Faggion Silveira Santos">
+         <font>
+            <Font name="Lucida Sans Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anderson Alves Schinaid">
+         <font>
+            <Font name="Lucida Sans Regular" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence 
+		http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="conexao"> <!-- Configura o nome do contexto que será utilizado -->
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="oracle.jdbc.OracleDriver" /> <!-- nome completo da classe do driver JDBC -->
+			<property name="javax.persistence.jdbc.user" value="Gabriel" /> <!-- Usuário do banco de dados -->
+			<property name="javax.persistence.jdbc.password" value="gabriel2b21" /> <!-- Senha do banco de dados -->
+			<property name="javax.persistence.jdbc.driver" value="jdbc:oracle:thin:@127.0.0.1:1521:XE" /> <!-- Endereço do banco de dados -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" /> <!-- Configura o dialeto que o Hibernate utilizará para a montagem dos comandos SQL -->
+			<property name="hibernate.show_sql" value="true" /> <!-- Informa se os comandos SQL devem ser exibidos no console -->
+			<property name="hibernate.format_sql" value="true" /> <!-- Indica se os comandos SQL exibidos no console devem ser formatados -->
+			<property name="hibernate.hbm2ddl.auto" value="update" /> <!-- Cria ou atualiza automaticamente a estrutura das tabelas no banco de dados -->
+		</properties>
+	</persistence-unit>
+</persistence>
+	
